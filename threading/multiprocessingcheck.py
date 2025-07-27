@@ -17,3 +17,7 @@ if __name__ == "__main__":
         p.join()
 
     print("Multiprocessing complete.")
+
+# You can create 100 processes also in a 8 core machine, but they will not run in parallel due to Core limitations. 
+# But context switching will help in trying to run them in parallel.
+# There is no true CPU hold processing. we can try to make it so much intenstive only, not 100%
